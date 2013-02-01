@@ -7,7 +7,7 @@ GENERATEDJS = $(patsubst coffee/%.coffee,js/%.js,$(COFFEES))
 watchers:
 	stylus -o css/ -w stylus/ &
 	coffee -o js/ -w coffee/ &
-	jekyll --server --auto --pygments --no-lsi --safe &
+	jekyll --server --auto --pygments --no-lsi --kramdown &
 
 clean:
 	rm -f $(GENERATEDCSS) $(GENERATEDJS)

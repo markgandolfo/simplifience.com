@@ -1,0 +1,35 @@
+header h1 {
+  font-family: "Sonsie One", serif;
+  font-size: 3em;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.33em;
+}
+header .definition {
+  font-family: "Marko One", serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+nav {
+  max-width: 600px;
+  margin: 4em auto;
+  text-align: center;
+}
+nav #topics {
+  text-align: left;
+  display: inline-block;
+}
+nav #topics li {
+  font-weight: bold;
+  color: #00f;
+}
+nav #topics ul li {
+  font-weight: normal;
+  color: #000;
+}

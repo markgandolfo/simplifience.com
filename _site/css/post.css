@@ -1,0 +1,50 @@
+#title {
+  float: right;
+}
+#definition {
+  display: none;
+}
+div.navigator ul {
+  list-style: none;
+}
+#following {
+  float: left;
+}
+#following li {
+  text-align: left;
+}
+#following li:before {
+  content: "« ";
+}
+#followers {
+  float: right;
+}
+#followers li {
+  text-align: right;
+}
+#followers li:after {
+  content: " »";
+}
+#main > article {
+  clear: both;
+}
+hr.marker {
+  clear: both;
+  background: none;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  #main > article {
+    width: auto;
+    float: auto;
+  }
+  #main > article p {
+    display: inline-block;
+    float: left;
+    width: 57%;
+  }
+  #main > article p.note {
+    float: right;
+    width: 28%;
+  }
+}

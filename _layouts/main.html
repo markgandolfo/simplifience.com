@@ -1,0 +1,34 @@
+---
+layout: base
+links:
+- main
+---
+<article>
+	<section>
+	{{ content }}
+	</section>
+</article>
+
+<div id="aside-container">
+	<aside>
+		<h3>Featured articles</h3>
+		<div style="text-align: right">None yet.</div>
+	</aside>
+
+	<aside>
+		<h3>Popular tags</h3>
+		<div style="text-align: right">Hold your horses!</div>
+		{% assign tags = site.tags | keys | sort %}
+		<ul>
+		{% for tag in tags %}
+		<li>
+			{% assign reading = page.tags | contains: tag %}
+			<a href="/tag/{{ tag }}.html" class="{{ tag }}
+				{% if page.tag == tag %} active{% endif %}
+				{% if reading == true %} reading{% endif %}">
+				{{ tag | capitalize }}
+			</a>
+		</li>
+		{% endfor %}
+	</aside>
+</div>

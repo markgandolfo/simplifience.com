@@ -1,0 +1,32 @@
+---
+layout: base
+links:
+- post
+---
+<article>
+	{{ content }}
+</article>
+
+<hr class="marker">
+
+{% assign following = page | following %}
+{% if following != empty %}
+<div id="following" class="navigator">
+	<ul>
+		{% for predecessor in following %}
+		<li><a href="{{ predecessor.url }}">{{ predecessor.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% assign followers = page | followers %}
+{% if followers != empty %}
+<div id="followers" class="navigator">
+	<ul>
+		{% for follower in followers %}
+		<li><a href="{{ follower.url }}">{{ follower.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
