@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// Smaller header
+
+#title
+	float right
+
+#definition
+	display none
+
+
+// -----------------------------------------------------------------------------
+// Article navigators.
+
+div.navigator
+	ul
+		list-style none
+
+#following
+	float left
+	li
+		text-align left
+		&:before
+			content "« "
+#followers
+	float right
+	li
+		text-align right
+		&:after
+			content " »"
+
+
+// -----------------------------------------------------------------------------
+// Note layout.
+
+#main > article
+	clear both
+
+// Place above the paragraph where you want the notes to float.
+hr.marker
+	clear both
+	background none
+	border none
+
+
+// Float the notes right when the screen is large enough.
+@media only screen and (min-width: 768px) {
+	#main > article {
+		width: auto;
+		float: auto;
+	}
+
+	#main > article p {
+		display: inline-block;
+		float: left;
+		width: 57%;
+	}
+
+	#main > article p.note {
+		float: right;
+		width: 28%;
+	}
+
+}
+
+
+// -----------------------------------------------------------------------------
+// Note appearance. TODO
+

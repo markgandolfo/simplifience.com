@@ -1,0 +1,268 @@
+/* Many thanks to Jonathan Verrecchia & initializr's template.
+ * http://verekia.com/initializr/responsive-template */
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sonsie One'), local('SonsieOne-Regular'), url("fonts/sonsie-one.woff") format('woff');
+}
+@font-face {
+  font-family: 'Marko One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marko One'), local('Marko One'), url("fonts/marko-one.woff") format('woff');
+}
+body {
+  font: '16px/24px' Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+::selection,
+::-moz-selection {
+  background: #099;
+  color: #fff;
+  text-shadow: none;
+}
+#header-container {
+  background: #099;
+  text-align: center;
+}
+#title {
+  font-family: 'Sonsie One', serif;
+  font-weight: normal;
+}
+#title a {
+  text-decoration: none;
+  color: #fff;
+}
+#title avisited,
+#title aactive,
+#title ahover {
+  color: #fff;
+}
+#definition {
+  color: #3cc;
+  display: inline-block;
+  text-align: left;
+}
+#definition .pronunciation {
+  color: #006363;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  padding-left: 1em;
+}
+#main-container {
+  color: #000;
+}
+#main article {
+  margin-bottom: aside_spread;
+}
+#main a {
+  text-decoration: none;
+  color: #099;
+}
+#main a:active {
+  color: #3cc;
+}
+#main a:visited {
+  color: #bf7130;
+}
+#main a:hover {
+  color: #ff9640;
+  text-decoration: underline;
+}
+#main.tag-page h2 {
+  height: 1.5em;
+  color: #000;
+}
+#main.tag-page h2 .tag {
+  color: #ff7400;
+}
+#main.tag-page td {
+  padding: 0 1em;
+}
+#main.tag-page .date {
+  font-size: 0.8;
+  opacity: 0.4;
+  left: 1em;
+}
+#aside-container aside {
+  color: #fff;
+  background: #099;
+  font-family: "Marko One";
+  margin-bottom: 2em;
+  overflow: auto;
+}
+#aside-container aside a {
+  color: #5ccccc;
+  text-decoration: none;
+}
+#aside-container aside a:active {
+  color: #ff9640;
+}
+#aside-container aside a:visited {
+  color: #ff7400;
+}
+#aside-container aside a:hover {
+  color: #ff9640;
+}
+#aside-container aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer-container footer {
+  overflow: auto;
+}
+#footer-container footer a {
+  color: #5ccccc;
+  opacity: 0.4;
+  float: right;
+  text-decoration: none;
+}
+#footer-container footer a:visited {
+  color: #006363;
+}
+#footer-container footer a:active {
+  color: #ff7400;
+}
+#footer-container footer a:hover {
+  opacity: 1;
+}
+#main {
+  padding: 30px 0;
+}
+#main > article h1 {
+  font-size: 2em;
+}
+#aside-container aside {
+  padding: 0px 5% 20px;
+}
+#footer-container footer {
+  padding: 20px 0;
+}
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  #main > article {
+    float: left;
+    width: 57%;
+  }
+  #aside-container {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 1026px;
+/* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+.ie7 #title {
+  padding-top: 20px;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
