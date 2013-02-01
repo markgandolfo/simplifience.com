@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sonsie One'), local('SonsieOne-Regular'), url("fonts/sonsie-one.woff") format('woff');
+}
+@font-face {
+  font-family: 'Marko One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marko One'), local('Marko One'), url("fonts/marko-one.woff") format('woff');
+}
+header h1 {
+  font-family: "Sonsie One", serif;
+  font-size: 3em;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.33em;
+}
+header .definition {
+  font-family: "Marko One", serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+nav {
+  max-width: 600px;
+  margin: 4em auto;
+  text-align: center;
+}
+nav #topics {
+  text-align: left;
+  display: inline-block;
+}
+nav #topics li {
+  font-weight: bold;
+  color: #00f;
+}
+nav #topics ul li {
+  font-weight: normal;
+  color: #000;
+}
+footer {
+  text-align: right;
+  font-size: 80%;
+  font-weight: lighter;
+  opacity: 0.4;
+}

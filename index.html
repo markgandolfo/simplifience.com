@@ -7,12 +7,10 @@
   <meta name="author" content="So8res">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/less" href="less/style.less">
-  <script src="js/dev/less-1.2.1.min.js"></script>
-  <script src="js/head/modernizr-2.5.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/simplifience.css">
 </head>
 <body>
-  <!--Version: 0.1.1 -->
   <!--[if lt IE 7]><p class=chromeframe>
     Your browser is <em>ancient!</em>
     <a href="http://browsehappy.com/">Upgrade to a different browser</a> or
@@ -23,16 +21,17 @@
   <div class="container wrapper">
     <header>
       <h1>Simplifience</h1>
-      <hr>
-    </header>
-    <section>
-      <div id="definition">
+      <div class="definition">
         <strong><em>noun</em></strong>
         <ol>
-          <li>Simplified science</li>
-          <li>Science, less the accumulated cruft of history</li>
+          <li>
+            Simplified science; science less the accumulated cruft of history.
+          </li>
         </ol>
       </div>
+    </header>
+
+    <section>
       <p>
       Behold the deepest question ever asked by a conscious mind: "Why?"
       <br>
@@ -56,6 +55,7 @@
       In a few days. When I start generating some content.
       </p>
     </section>
+
     <nav>
       <ul id="topics">
         <li>Meta
@@ -87,26 +87,27 @@
         </li>
       </ul>
     </nav>
+
     <footer>
       <a href="so8r.es">So8res</a>
     </footer>
   </div>
 
-  <!--
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/local/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/dev/coffee-script.js"></script>
-  <script type="text/coffeescript" src="coffee/main.coffee"></script>
-  -->
-
+  <script src="js/jquery.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-30196171-1']);
     _gaq.push(['_trackPageview']);
     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     var ga = document.createElement('script');
+     ga.type = 'text/javascript';
+     ga.async = true;
+     ga.src = ('https:' == document.location.protocol ?
+         'https://ssl' :
+         'http://www') +
+         '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
     })();
   </script>
 </body>
