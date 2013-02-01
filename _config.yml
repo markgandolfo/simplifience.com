@@ -1,5 +1,5 @@
 pygments: true
-exclude: stylus/, coffee/
+exclude: stylus/, coffee/, publish
 permalink: none
 tag_page_layout: tag_page
 tag_page_dir: _tags

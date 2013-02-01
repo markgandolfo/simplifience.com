@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+if test -z "$1"; then
+	local message="Pushing to live from master."
+else
+	local message=$@
+fi
+
+local live='gh-pages'
+local dev='master'
+
+git update-ref refs/heads/$live $(echo $@ | git commit-tree $dev^{tree}:_site -p $(cat .git/refs/heads/$live))
