@@ -1,0 +1,70 @@
+span.wrong,
+strong.wrong,
+em.wrong {
+  color: #f00;
+}
+#main aside.wrong {
+  background: #ff4040;
+  border: 2px solid #a60000;
+  color: #fff;
+}
+span.science,
+strong.science,
+em.science {
+  color: #cd0074;
+}
+#main aside.science {
+  background: #e6399b;
+  border: 2px solid #85004b;
+  color: #fff;
+}
+span.math,
+strong.math,
+em.math {
+  color: #1240ab;
+}
+#main aside.math {
+  background: #4671d5;
+  border: 2px solid #06266f;
+  color: #fff;
+}
+span.simplifience,
+strong.simplifience,
+em.simplifience {
+  color: #7109aa;
+}
+#main aside.simplifience {
+  background: #9f3ed5;
+  border: 2px solid #48036f;
+  color: #fff;
+}
+span.info,
+strong.info,
+em.info {
+  color: #099;
+}
+#main aside.info {
+  background: #3cc;
+  border: 2px solid #006363;
+  color: #fff;
+}
+span.pedant,
+strong.pedant,
+em.pedant {
+  color: #ff7400;
+}
+#main aside.pedant {
+  background: #ff9640;
+  border: 2px solid #a64b00;
+  color: #fff;
+}
+span.compsci,
+strong.compsci,
+em.compsci {
+  color: #0c0;
+}
+#main aside.compsci {
+  background: #39e639;
+  border: 2px solid #008500;
+  color: #fff;
+}
