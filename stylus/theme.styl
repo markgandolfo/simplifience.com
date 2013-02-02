@@ -1,0 +1,95 @@
+@import colors
+
+note(class, text_color, body_color, border_color, contrast_color = white)
+	span.{class}, strong.{class}, em.{class}
+		color text_color
+	#main aside.{class}
+		background body_color
+		border 2px solid border_color
+		color contrast_color
+
+
+// -----------------------------------------------------------------------------
+// Color scheme. Currently: Complementary teal.
+
+main = pure_teal
+main_light = light_teal
+main_pale = pale_teal
+main_flat = flat_teal
+main_dark = dark_teal
+
+complement = pure_orange
+complement_flat = flat_orange
+complement_dark = dark_orange
+complement_light = light_orange
+complement_pale = pale_orange
+
+
+// -----------------------------------------------------------------------------
+// Named colors.
+
+
+info = pure_teal
+info_light = light_teal
+info_pale = pale_teal
+info_flat = flat_teal
+info_dark = dark_teal
+note('info', info, info_light, info_dark)
+
+math = pure_blue
+math_light = light_blue
+math_pale = pale_blue
+math_flat = flat_blue
+math_dark = dark_blue
+note('math', math, math_light, math_dark)
+
+rigor = pure_navy
+rigor_light = light_navy
+rigor_pale = pale_navy
+rigor_flat = flat_navy
+rigor_dark = dark_navy
+note('rigor', rigor, rigor_light, rigor_dark)
+
+simplifience = pure_violet
+simplifience_light = light_violet
+simplifience_pale = pale_violet
+simplifience_flat = flat_violet
+simplifience_dark = dark_violet
+note('simplifience', simplifience, simplifience_light, simplifience_dark)
+
+science = pure_magenta
+science_light = light_magenta
+science_pale = pale_magenta
+science_flat = flat_magenta
+science_dark = dark_magenta
+note('science', science, science_light, science_dark)
+
+wrong = pure_red
+wrong_light = light_red
+wrong_pale = pale_red
+wrong_flat = flat_red
+wrong_dark = dark_red
+note('wrong', wrong, wrong_light, wrong_dark)
+
+pedant = pure_orange
+pedant_light = light_orange
+pedant_pale = pale_orange
+pedant_flat = flat_orange
+pedant_dark = dark_orange
+note('pedant', pedant, pedant_light, pedant_dark)
+
+
+define = pure_yellow
+define_light = light_yellow
+define_pale = pale_yellow
+define_flat = flat_yellow
+define_dark = dark_yellow
+note('define', define_flat, define_light, define_dark, black)
+
+
+compsci = pure_green
+compsci_light = light_green
+compsci_pale = pale_green
+compsci_flat = flat_green
+compsci_dark = dark_green
+note('compsci', compsci, compsci_light, compsci_dark)

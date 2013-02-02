@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }}</title>
+	<title>Why Understand the World?</title>
 	<meta name="author" content="So8res">
 	<meta name="description" content="Simplified science">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,9 +14,9 @@
 	<link rel="icon" href="/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
-	{% for link in page.links %}
-	<link rel="stylesheet" type="text/css" href="/css/{{ link }}.css">
-	{% endfor %}
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
@@ -48,8 +48,70 @@
 	</div>
 
 	<div id="main-container">
-		<div id="main" class="wrapper clearfix {{ page.main-class }}">
-			{{ content }}
+		<div id="main" class="wrapper clearfix ">
+			<article>
+	<p>Why learn how the universe works?</p>
+
+<p>Well, native curiosity, for one thing. You know how kids can&rsquo;t stop asking why?
+You used to be a kid once. What happened to that feeling? I bet it&rsquo;s still
+somewhere deep inside of you, if you dig far enough.</p>
+
+<p><em>Why</em> are we here? What&rsquo;s up with this whole <span class="wrong">existence</span>
+thing, anyway?</p>
+
+<aside class="wrong">And don't give me any spiritual or religious lines. Until we have some
+way to know for sure, I'm not going to stop looking for the real
+answers. They'll probably surprise us.</aside>
+
+<p>If that&rsquo;s not enough of an answer for you, consider what knowledge of the
+universe has given us so far. We can fly around the entire planet in a single
+day and with minimal effort. We can contact friends halfway around the world in
+the space of a thought. We can convene a symphony in our ears on demand and live
+long lives without fear of disease.</p>
+
+<p>We&rsquo;ve literally discovered magic, only it&rsquo;s not magic to us, because we
+understand it.</p>
+
+<p>And the universe only gets more interesting. Did you know that you can time
+travel to the future? That you can fly to the center of the galaxy in half
+a second, even though it&rsquo;s 27,000 light years away? That gravity isn&rsquo;t a force?</p>
+
+<p>We don&rsquo;t understand the universe yet, not deeply, but we understand <em>far</em> more
+than most people think. Misconceptions about. People are still confused about
+very well-established facts, thinking that they&rsquo;re still the <span class="science">sticking
+points</span> of modern science. And people don&rsquo;t even <em>know</em> the
+open questions that we currently face.</p>
+
+<aside class="science">Entanglement and uncertainty, for instance. Don't worry, they'll be
+intuitive by the time we're through.</aside>
+
+<p>It doesn&rsquo;t help that these incredibly cool revelations are hidden behind opaque
+walls of millennia-old mistakes in mathematics and centuries of confusing
+scientific history.</p>
+
+<p>That&rsquo;s no way to make new discoveries.</p>
+
+<p>So let&rsquo;s get you up to speed. Who knows? You may be the one to have the next big
+insight: but you can&rsquo;t do that unless you know where things stand today.</p>
+
+</article>
+
+<hr class="mark">
+
+
+
+<div id="following" class="navigator">
+	<ul>
+		
+		<li><a href="/the-beginning.html">The Beginning</a></li>
+		
+	</ul>
+</div>
+
+
+
+
+
 		</div>
 	</div>
 
@@ -75,9 +137,7 @@
 	</script>
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<script type="text/javascript" src="/js/MathBox-bundle.js"></script>
-	{% for script in page.scripts %}
-	<script type="text/javascript" src="/js/{{ script }}.js"></script>
-	{% endfor %}
+	
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-30196171-1']);

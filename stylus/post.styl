@@ -11,7 +11,9 @@
 // -----------------------------------------------------------------------------
 // Article navigators.
 
-div.navigator
+#main div.navigator
+	a
+		text-decoration none
 	ul
 		list-style none
 
@@ -28,6 +30,22 @@ div.navigator
 		&:after
 			content " »"
 
+#main > article > p
+	img
+		display block
+		margin 0 auto
+
+#main > article > ul, #main > article > ol
+	margin-top 0
+	margin-bottom 28px
+
+#main > article > aside > p
+	margin-bottom 0
+
+#main > article > blockquote
+	font-style italic
+	margin-top 0
+	margin-bottom 0
 
 // -----------------------------------------------------------------------------
 // Note layout.
@@ -36,7 +54,7 @@ div.navigator
 	clear both
 
 // Place above the paragraph where you want the notes to float.
-hr.marker
+hr.mark
 	clear both
 	background none
 	border none
@@ -49,13 +67,23 @@ hr.marker
 		float: auto;
 	}
 
-	#main > article p {
+
+	#main > article > p,
+	#main > article > blockquote,
+	#main > article > ul,
+	#main > article > ol,
+	#main > article > h1,
+	#main > article > h2,
+	#main > article > h3,
+	#main > article > h4,
+	#main > article > h5,
+	#main > article > h6 {
 		display: inline-block;
 		float: left;
 		width: 57%;
 	}
 
-	#main > article p.note {
+	#main > article > aside {
 		float: right;
 		width: 28%;
 	}

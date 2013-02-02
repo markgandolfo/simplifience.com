@@ -22,9 +22,11 @@ module Jekyll
 		end
 
 		def page(title)
-			@context.registers[:site].posts.find do |post|
+			post = @context.registers[:site].posts.find do |post|
 				post.data['title'] == title
 			end
+			p "post is ", post
+			post ? post.url : "/stub.html"
 		end
 	end
 end

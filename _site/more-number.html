@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{{ page.title }}</title>
+	<title>More Number</title>
 	<meta name="author" content="So8res">
 	<meta name="description" content="Simplified science">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,9 +14,9 @@
 	<link rel="icon" href="/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
-	{% for link in page.links %}
-	<link rel="stylesheet" type="text/css" href="/css/{{ link }}.css">
-	{% endfor %}
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
@@ -48,8 +48,66 @@
 	</div>
 
 	<div id="main-container">
-		<div id="main" class="wrapper clearfix {{ page.main-class }}">
-			{{ content }}
+		<div id="main" class="wrapper clearfix ">
+			<article>
+	<p>So numbers are only as useful as what they can apply to.</p>
+
+<p>Now, what can numbers do?</p>
+
+<p>Well, we touched upon this a bit earlier. It depends upon the situation.</p>
+
+<p>Take, for example, fractions. Often times, fractions make sense. When you and
+your tribe of five have killed a woolly mammoth, for instance, it makes a lot of
+sense to introduce the fraction &ldquo;one fifth&rdquo; into you vocabulary for numbers.</p>
+
+<p>However, when your friend Thurg gets his top fifth eaten by a saber toothed
+tiger, you don&rsquo;t suddenly have only three and four-fifths living friends. You
+have three living friends.</p>
+
+<p>Sometimes you&rsquo;re dealing with fractions, sometimes you aren&rsquo;t.</p>
+
+<p>And this combination &ndash; whole numbers and fractions &ndash; is sufficient to describe
+everything you will find in the world. <span class="science">Literally
+everything.</span></p>
+
+<aside class="science">Well, until you discover quantum physics. Or circles. Bear with me here.
+Rationals are good enough for things you'll directly encounter in the physical
+world.</aside>
+
+<p>The combination of whole numbers and fractions are enough to describe anything
+in the physical world that you want to describe. You might contest that some
+numbers can&rsquo;t be fully written out, like certain ratios pertaining to circles.
+This is fine, because in the real world there&rsquo;s no such thing as a perfect
+circle: and you can always get close enough with a fraction. In fact, the
+fraction will probably be <em>closer</em> than whatever number you&rsquo;d prefer to use
+(rather irrationally), because the fraction can better capture the defects and
+the inherent granularity in what you were assuming was a true circle.</p>
+
+<p>In fact, these numbers are so good at describing everything in the physical
+world that I&rsquo;m going to refer to them as the <span class="simplifience">Physical
+Numbers</span>.</p>
+
+<aside class="simplifience">Mathematicians call them "Rational Numbers". I don't care. Mathematicians
+have stupid names for their numbers anyway.</aside>
+
+</article>
+
+<hr class="mark">
+
+
+
+<div id="following" class="navigator">
+	<ul>
+		
+		<li><a href="/numbers.html">Numbers</a></li>
+		
+	</ul>
+</div>
+
+
+
+
+
 		</div>
 	</div>
 
@@ -75,9 +133,7 @@
 	</script>
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<script type="text/javascript" src="/js/MathBox-bundle.js"></script>
-	{% for script in page.scripts %}
-	<script type="text/javascript" src="/js/{{ script }}.js"></script>
-	{% endfor %}
+	
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-30196171-1']);

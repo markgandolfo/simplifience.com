@@ -11,24 +11,46 @@ links:
 
 <div id="aside-container">
 	<aside>
-		<h3>Featured articles</h3>
-		<div style="text-align: right">None yet.</div>
+		<h3>Read these first:</h3>
+		<ul>
+			<li><a href="{{ "What is Simplifience?" | page }}">What's Simplifience?</a></li>
+			<li><a href="{{ "What is Simplifience?" | page }}">Some ground rules</a></li>
+			<li><a href="{{ "Expectations" | page }}">What to expect</a></li>
+			<li><a href="{{ "Why?" | page }}">What's in a why?</a></li>
+		</ul>
+	</aside>
+
+	<aside>
+		<h3>A few good <em>Why</em>s:</h3>
+		<ul>
+			<li><a href="{{ "The Beginning" | page }}">Why does math matter?</a></li>
+			<li><a href="{{ "Why does a²+b²=c²?" | page }}">Why does a²+b²=c²?</a></li>
+			<li><a href="{{ "Why can't you divide by zero?" | page }}">Why can't you divide by zero?</a></li>
+		</ul>
+	</aside>
+
+	<aside>
+		<h3>Dive right in</h3>
+		<ul>
+			<li><a href="{{ "Number" | page }}">Number: More and Less</a></li>
+			<li><a href="{{ "Circles" | page }}">The 2<sup>nd</sup> most important shape</a></li>
+		</ul>
 	</aside>
 
 	<aside>
 		<h3>Popular tags</h3>
-		<div style="text-align: right">Hold your horses!</div>
 		{% assign tags = site.tags | keys | sort %}
 		<ul>
-		{% for tag in tags %}
-		<li>
-			{% assign reading = page.tags | contains: tag %}
-			<a href="/tag/{{ tag }}.html" class="{{ tag }}
-				{% if page.tag == tag %} active{% endif %}
-				{% if reading == true %} reading{% endif %}">
-				{{ tag | capitalize }}
-			</a>
-		</li>
-		{% endfor %}
+			{% for tag in tags %}
+			<li>
+				{% assign reading = page.tags | contains: tag %}
+				<a href="/tag/{{ tag }}.html" class="{{ tag }}
+					{% if page.tag == tag %} active{% endif %}
+					{% if reading == true %} reading{% endif %}">
+					{{ tag | capitalize }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
 	</aside>
 </div>

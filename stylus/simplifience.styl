@@ -1,53 +1,19 @@
 /* Many thanks to Jonathan Verrecchia & initializr's template.
  * http://verekia.com/initializr/responsive-template */
-
-
-// -----------------------------------------------------------------------------
-// Color scheme. Currently: Complementary teal.
-
-main = #009999
-light = #33CCCC
-lighter = #5CCCCC
-dark = #1D7373
-darker = #006363
-
-complement = #FF7400
-compledark = #BF7130
-compledarker = #A64B00
-complelight = #FF9640
-complelighter = #FFB273
-
-
-// -----------------------------------------------------------------------------
-// Custom font faces. Thanks, Google font librar!
-
-@font-face
-	font-family 'Sonsie One'
-	font-style normal
-	font-weight 400
-	src local('Sonsie One'), local('SonsieOne-Regular'),
-		url('fonts/sonsie-one.woff') format('woff')
-
-@font-face
-	font-family 'Marko One'
-	font-style normal
-	font-weight 400
-	src local('Marko One'), local('Marko One'),
-		url('fonts/marko-one.woff') format('woff')
-
-// The font families
-normalsize = '16px/24px'
-uncomfortable = 'Sonsie One', serif
-exciting = 'Marko One', serif
-boring = Helvetica, Helvetica Neue, Arial, sans-serif
-
+@import fonts
+@import theme
 
 
 // -----------------------------------------------------------------------------
 // The basic rules.
 
 body
-	font: normalsize boring
+	font 16px/28px boring
+
+p
+	line-height 28px
+	margin-bottom 28px
+	margin-top 0
 
 .wrapper
 	width: 90%
@@ -58,7 +24,7 @@ body
 // Pseudo elements.
 
 ::selection, ::-moz-selection
-	background main
+	background main_pale
 	color white
 	text-shadow none
 
@@ -80,13 +46,19 @@ body
 			color white
 
 #definition
-	color light
+	color main_light
 	display inline-block
 	text-align left
 	.pronunciation
-		color darker
+		color main_dark
 		font-family boring
 		padding-left 1em
+	.origin
+		padding-left: 1em
+	ol
+		margin-top 0
+	li
+		color white
 
 
 // -----------------------------------------------------------------------------
@@ -99,15 +71,15 @@ body
 	article
 		margin-bottom aside_spread
 	a
-		text-decoration none
+		text-decoration underline
 		color main
 		&:active
-			color light
+			color main_light
 		&:visited
-			color compledark
+			color main_dark
 		&:hover
-			color complelight
-			text-decoration underline
+			color main
+			text-decoration none
 
 // Tag-page overrides.
 #main.tag-page
@@ -132,22 +104,16 @@ aside_spread = 2em
 #aside-container aside
 	color white
 	background main
-	font-family "Marko One"
-	margin-bottom aside_spread
-	overflow auto
+	font-family exciting
 	a
-		color lighter
+		color main_pale
 		text-decoration none
 		&:active
-			color complelight
+			color complement_pale
 		&:visited
-			color complement
+			color complement_light
 		&:hover
-			color complelight
-	ul
-		list-style none
-		margin 0
-		padding 0
+			color complement
 
 
 // -----------------------------------------------------------------------------
@@ -156,12 +122,12 @@ aside_spread = 2em
 #footer-container footer
 	overflow auto
 	a
-		color lighter
+		color main_pale
 		opacity .4
 		float right
 		text-decoration none
 		&:visited
-			color darker
+			color main_dark
 		&:active
 			color complement
 		&:hover
@@ -178,11 +144,23 @@ aside_spread = 2em
 #main > article h1
 	font-size 2em
 
+#aside-container aside, #main aside
+	padding 20px 5%
+	margin-bottom aside_spread
+	overflow auto
+	ul
+		list-style none
+		margin 0
+		padding 0
+
 #aside-container aside
-	padding 0px 5% 20px
+	padding-top 0
 
 #footer-container footer
 	padding 20px 0
+
+#definition
+	display none
 
 // Mobile-only layouts go here.
 @media only screen and (min-width: 480px) {
@@ -190,6 +168,9 @@ aside_spread = 2em
 
 // Medium-sized layouts.
 @media only screen and (min-width: 768px) {
+	#definition {
+		display: inline-block;
+	}
 	#main > article {
 		float: left;
 		width: 57%;

@@ -2,19 +2,21 @@
 layout: main
 title: Simplifience
 ---
-Behold the deepest question ever asked: *Why?*
+Behold the deepest question ever asked: [*Why?*]({{ "Why?" | page }}){:.why}
 
-Why is the sky blue? Why does the world spin? Why are we here? *Why?*
+<span>Why</span>{:.why} is the sky blue? <span>Why</span>{:.why} does the world
+spin? <span>Why</span>{:.why} are we here? *Why?*{:.why}
 
-This question has been at the front of our minds since first our minds could
-ask, and it will haunt our minds until the universe fades and dies.
+This question has been at the front of our minds since first we conceived of
+questions, and it will haunt us until the universe fades.
 
-Humankind has hounded this question forever, and we've made incredible progress:
-progress which is inadequately taught.
+Humankind has hounded this question since the dawn of thought, and we've made
+incredible progress: progress which is inadequately taught.
 
-Science is coupled with its history, dragging students through the same
-confusion our predecessors faced.
+<span>Science</span>{:.science} is coupled with its history, dragging students
+through the same confusion our predecessors faced.
+<span>Mathematics</span>{:.math} is reduced to memorization, hiding the deep
+answers it bears.
 
-Mathematics is reduced to memorization, hiding the deep answers it bears.
-
-Simplifience is neither. It is a quest to understand the unvierse.
+<span>Simplifience</span>{:.simplifience} is neither. It is a quest to
+understand the universe.
