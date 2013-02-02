@@ -7,8 +7,8 @@ Math and Science are wrong.
 Oh, they're not wrong as in incorrect (though they have drawn incorrect
 conclusions before). They're wrong because they're *taught* wrong.
 
-It's not their fault. Math is millennia -- more than 2,500 years -- old. It's
-bound to pick up some historical <span>cruft</span>{:.define} along the way.
+It's not their fault. Math is more than 2,500 years old. It's bound to pick up
+some historical <span>cruft</span>{:.define} along the way.
 
 <aside markdown="1" class="define">
 cruft _n._
@@ -69,7 +69,7 @@ madness.
 Simple, but perhaps mind-bending.
 </aside>
 
-![Look! A scientist!](/images/hugheverettiii.jpg)
+![Look! A scientist!](/images/hugheverettIII.jpg)
 
 We say things like
 

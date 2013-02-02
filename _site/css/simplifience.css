@@ -78,35 +78,35 @@ em.wrong {
   border: 2px solid #a60000;
   color: #fff;
 }
-span.pedant,
-strong.pedant,
-em.pedant {
-  color: #ff7400;
-}
-#main aside.pedant {
-  background: #ff9640;
-  border: 2px solid #a64b00;
-  color: #fff;
-}
-span.define,
-strong.define,
-em.define {
+span.caution,
+strong.caution,
+em.caution {
   color: #bfbf30;
 }
-#main aside.define {
+#main aside.caution {
   background: #ffff40;
   border: 2px solid #a6a600;
   color: #000;
 }
-span.compsci,
-strong.compsci,
-em.compsci {
+span.other,
+strong.other,
+em.other {
+  color: #86b32d;
+}
+#main aside.other {
+  background: #b9f73e;
+  border: 2px solid #679b00;
+  color: #000;
+}
+span.define,
+strong.define,
+em.define {
   color: #0c0;
 }
-#main aside.compsci {
+#main aside.define {
   background: #39e639;
   border: 2px solid #008500;
-  color: #fff;
+  color: #000;
 }
 body {
   font: 16px/28px 'Tenor Sans', sans-serif;
