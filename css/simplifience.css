@@ -26,17 +26,43 @@ em.info {
 #main aside.info {
   background: #3cc;
   border: 2px solid #006363;
-  color: #fff;
+  color: #000;
 }
-span.math,
-strong.math,
-em.math {
+#main aside.info .MathJax {
+  color: #fff !important;
+}
+#main aside.info a {
+  opacity: 0.8;
+  color: #000;
+}
+#main aside.info a:visited {
+  color: #006363;
+}
+#main aside.info a:hover {
+  opacity: 1;
+}
+span.maths,
+strong.maths,
+em.maths {
   color: #1240ab;
 }
-#main aside.math {
+#main aside.maths {
   background: #4671d5;
   border: 2px solid #06266f;
   color: #fff;
+}
+#main aside.maths .MathJax {
+  color: #fff !important;
+}
+#main aside.maths a {
+  opacity: 0.8;
+  color: #fff;
+}
+#main aside.maths a:visited {
+  color: #06266f;
+}
+#main aside.maths a:hover {
+  opacity: 1;
 }
 span.rigor,
 strong.rigor,
@@ -48,6 +74,19 @@ em.rigor {
   border: 2px solid #200772;
   color: #fff;
 }
+#main aside.rigor .MathJax {
+  color: #fff !important;
+}
+#main aside.rigor a {
+  opacity: 0.8;
+  color: #fff;
+}
+#main aside.rigor a:visited {
+  color: #200772;
+}
+#main aside.rigor a:hover {
+  opacity: 1;
+}
 span.simplifience,
 strong.simplifience,
 em.simplifience {
@@ -57,6 +96,19 @@ em.simplifience {
   background: #9f3ed5;
   border: 2px solid #48036f;
   color: #fff;
+}
+#main aside.simplifience .MathJax {
+  color: #fff !important;
+}
+#main aside.simplifience a {
+  opacity: 0.8;
+  color: #fff;
+}
+#main aside.simplifience a:visited {
+  color: #48036f;
+}
+#main aside.simplifience a:hover {
+  opacity: 1;
 }
 span.science,
 strong.science,
@@ -68,6 +120,19 @@ em.science {
   border: 2px solid #85004b;
   color: #fff;
 }
+#main aside.science .MathJax {
+  color: #fff !important;
+}
+#main aside.science a {
+  opacity: 0.8;
+  color: #fff;
+}
+#main aside.science a:visited {
+  color: #85004b;
+}
+#main aside.science a:hover {
+  opacity: 1;
+}
 span.wrong,
 strong.wrong,
 em.wrong {
@@ -77,6 +142,19 @@ em.wrong {
   background: #ff4040;
   border: 2px solid #a60000;
   color: #fff;
+}
+#main aside.wrong .MathJax {
+  color: #fff !important;
+}
+#main aside.wrong a {
+  opacity: 0.8;
+  color: #fff;
+}
+#main aside.wrong a:visited {
+  color: #a60000;
+}
+#main aside.wrong a:hover {
+  opacity: 1;
 }
 span.caution,
 strong.caution,
@@ -88,15 +166,41 @@ em.caution {
   border: 2px solid #a6a600;
   color: #000;
 }
+#main aside.caution .MathJax {
+  color: #fff !important;
+}
+#main aside.caution a {
+  opacity: 0.8;
+  color: #000;
+}
+#main aside.caution a:visited {
+  color: #a6a600;
+}
+#main aside.caution a:hover {
+  opacity: 1;
+}
 span.other,
 strong.other,
 em.other {
-  color: #86b32d;
+  color: #bf7130;
 }
 #main aside.other {
-  background: #b9f73e;
-  border: 2px solid #679b00;
+  background: #ff9640;
+  border: 2px solid #a64b00;
   color: #000;
+}
+#main aside.other .MathJax {
+  color: #fff !important;
+}
+#main aside.other a {
+  opacity: 0.8;
+  color: #000;
+}
+#main aside.other a:visited {
+  color: #a64b00;
+}
+#main aside.other a:hover {
+  opacity: 1;
 }
 span.define,
 strong.define,
@@ -107,6 +211,19 @@ em.define {
   background: #39e639;
   border: 2px solid #008500;
   color: #000;
+}
+#main aside.define .MathJax {
+  color: #fff !important;
+}
+#main aside.define a {
+  opacity: 0.8;
+  color: #000;
+}
+#main aside.define a:visited {
+  color: #008500;
+}
+#main aside.define a:hover {
+  opacity: 1;
 }
 body {
   font: 16px/28px 'Tenor Sans', sans-serif;
@@ -130,36 +247,38 @@ p {
   background: #099;
   text-align: center;
 }
-#title {
+h1.title {
   font-family: 'Sonsie One', serif;
   font-weight: normal;
 }
-#title a {
+h1.title a {
   text-decoration: none;
   color: #fff;
 }
-#title avisited,
-#title aactive,
-#title ahover {
+h1.title avisited,
+h1.title aactive,
+h1.title ahover {
   color: #fff;
 }
 #definition {
   color: #3cc;
   display: inline-block;
   text-align: left;
+  padding-bottom: 28px;
 }
 #definition .pronunciation {
   color: #006363;
   font-family: 'Tenor Sans', sans-serif;
-  padding-left: 1em;
-}
-#definition .origin {
-  padding-left: 1em;
+  padding-left: 1ex;
 }
 #definition ol {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 1ex;
+  display: inline;
 }
 #definition li {
+  display: inline;
   color: #fff;
 }
 #main-container {
@@ -197,41 +316,57 @@ p {
   opacity: 0.4;
   left: 1em;
 }
-#aside-container aside {
+#aside-container aside,
+#footer-container aside {
   color: #fff;
   background: #099;
   font-family: 'Marko One', serif;
 }
-#aside-container aside a {
+#aside-container aside a,
+#footer-container aside a {
   color: #5ccccc;
   text-decoration: none;
 }
-#aside-container aside a:active {
+#aside-container aside a:active,
+#footer-container aside a:active {
   color: #ffb273;
 }
-#aside-container aside a:visited {
+#aside-container aside a:visited,
+#footer-container aside a:visited {
   color: #ff9640;
 }
-#aside-container aside a:hover {
+#aside-container aside a:hover,
+#footer-container aside a:hover {
   color: #ff7400;
+}
+#footer-container {
+  overflow: auto;
 }
 #footer-container footer {
   overflow: auto;
 }
-#footer-container footer a {
+#footer-container footer a.author,
+#footer-container footer .title a {
   color: #5ccccc;
   opacity: 0.4;
   float: right;
   text-decoration: none;
 }
-#footer-container footer a:visited {
+#footer-container footer a.author:visited,
+#footer-container footer .title a:visited {
   color: #006363;
 }
-#footer-container footer a:active {
+#footer-container footer a.author:active,
+#footer-container footer .title a:active {
   color: #ff7400;
 }
-#footer-container footer a:hover {
+#footer-container footer a.author:hover,
+#footer-container footer .title a:hover {
   opacity: 1;
+}
+#footer-container footer a.author {
+  float: right;
+  clear: right;
 }
 #main {
   padding: 30px 0;
@@ -240,25 +375,28 @@ p {
   font-size: 2em;
 }
 #aside-container aside,
+#footer-container aside,
 #main aside {
   padding: 20px 5%;
   margin-bottom: 2em;
   overflow: auto;
 }
 #aside-container aside ul,
+#footer-container aside ul,
 #main aside ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#aside-container aside {
+#aside-container aside,
+#footer-container aside {
   padding-top: 0;
-}
-#footer-container footer {
-  padding: 20px 0;
 }
 #definition {
   display: none;
+}
+iframe {
+  border: 0;
 }
 @media only screen and (min-width: 480px) {
 }

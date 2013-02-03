@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+echo "Unpublished articles:"
+ack "published: no" _posts -l
+echo
+echo "Articles (usually from LessWrong or Wikipedia) to internalize:"
+ack "TODO: INTERNALIZE" _posts -A1 | ack "\(.*\)" | sed "s/.*(\(.*\)).*/\1/"
